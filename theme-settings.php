@@ -1,6 +1,6 @@
 <?php
 // Include the definition of zen_settings() and zen_theme_get_default_settings().
-include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
+include_once './' . drupal_get_path('theme', 'ht16zen') . '/theme-settings.php';
 
 
 /**
@@ -11,7 +11,7 @@ include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
  * @return
  *   A form array.
  */
-function ht16zen_settings($saved_settings) {
+function ht16zen_triathlon_settings($saved_settings) {
 
   // Get the default values from the .info file.
   $defaults = zen_theme_get_default_settings('ht16zen');
@@ -24,19 +24,19 @@ function ht16zen_settings($saved_settings) {
    */
   $form = array();
   /* -- Delete this line if you want to use this setting
-  $form['ht16zen_example'] = array(
+  $form['ht16zen_triathlon_example'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Use this sample setting'),
-    '#default_value' => $settings['ht16zen_example'],
+    '#default_value' => $settings['ht16zen_triathlon_example'],
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */
 
   // Add the base theme's settings.
-  $form += zen_settings($saved_settings, $defaults);
+  $form += ht16zen_settings($saved_settings, $defaults);
 
   // Remove some of the base theme's settings.
-  unset($form['themedev']['zen_layout']); // We don't need to select the base stylesheet.
+  unset($form['themedev']['ht16zen_layout']); // We don't need to select the base stylesheet.
 
   // Return the form
   return $form;
