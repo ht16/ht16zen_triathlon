@@ -1,7 +1,61 @@
-﻿/* 
+/* 
  * @file triathlon.css
  * All css stylesheets for ht16zen_triathlon
  * that should override the ht16zen css
  * must be put inside this file.
  */
+ 
+ /***********************************************/
+/*Css fuer die Calendar View*/
+/***********************************************/
+.calendar-calendar .day-view table.full {
+  table-layout: fixed;
+  width: 99%;
+  margin: 0px;
+}
+.calendar-calendar .week-view table.full {
+  table-layout: fixed;
+  width: 99%;
+  margin: 0px;
+}
+
+.view-content .calendar-calendar ul  {
+  position: relative;
+  top: 0;
+}
+
+.view-content .calendar-calendar li.first  {
+  margin-left: 0px;
+}
+
+.view-content .calendar-calendar .date-prev span.next {
+  width: 300px;
+}
+
+.view-content .calendar-calendar .date-prev span.next a {
+  width: 300px;
+}
+
+#content-area .view-content .calendar-calendar .date-prev {
+  margin: 0 30px;
+}
+
+.view-content .calendar-calendar .date-heading {
+  float: left;
+}
+
+.calendar-calendar div.day {
+  width: auto;
+}
+
+#node-data-field-date1-field-date1-value, .view-data-node-data-field-date1-field-date1-value, .view-label-node-data-field-date1-field-date1-value {
+  display:none;
+}
+
+#main .view-content .calendar-calendar .date-heading {
+  top: -3px;
+}
+/***********************************************/
+/*Css Calendar Ende*/
+/***********************************************/
  
