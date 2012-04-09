@@ -55,22 +55,141 @@
 #main .view-content .calendar-calendar .date-heading {
   top: -3px;
 }
-/***********************************************/
-/*Css Calendar Ende*/
-/***********************************************/
 
-/*
- * css for Trainingstermin $cssclass
- */
-
-div#swim {
-  background-color: #ccccFF
+.calendar-calendar td .inner div.calendar div,
+.calendar-calendar td .inner div.calendar div a {
+  background: none;
 }
 
-div#bike {
-  background-color: #ccffcc;
+.calendar-calendar .month-view .full td.single-day div.monthview, 
+.calendar-calendar .week-view .full td.single-day div.weekview, 
+.calendar-calendar .day-view .full td.single-day div.dayview {
+  background: none;
 }
 
-div#run {
-  background-color: #ffcccc;
-} 
+
+/***********************************************/
+/*CSS fuer Gallery Images*/
+/***********************************************/
+ 
+#node-gallery-manage-images-form select {
+    width: 180px;
+}
+#node-gallery-manage-images-form input.form-text {
+    width: 174px;
+}
+
+/***********************************************/
+/*CSS fuer site user list*/
+/***********************************************/ 
+#content-area table, .sticky-enabled, .sticky-table {
+  width: 100%;
+}
+
+#content-area table tr.odd {
+  background-color: #FFF;
+}
+
+#content-area table tr.odd td.active {
+  background-color: #FFF;
+}
+
+#content-area table tr.even {
+  background-color: rgb(245, 245, 245);
+}
+
+#content-area table tr.even td.active {
+  background-color: rgb(245, 245, 245);
+}
+
+
+/*************************************************/
+/* CSS fuer Comments*/
+/*************************************************/
+.comment .submitted {
+    color: #999999;
+    font-size: 0.825em;
+    margin-bottom: 1.5em;
+}
+
+.comment .links {
+    font-size: 0.825em;
+}
+
+
+/*************************************************/
+/* CSS fuer Suche*/
+/*************************************************/
+#search-box {
+    float: right;
+    position: relative;
+    right: 7px;
+    top: 20px;
+}
+
+#search-box input#edit-search-theme-form-1 {
+    width: 170px;
+    height: 15px;
+}
+
+#search-box label {
+    display: none;
+}
+
+#search.container-inline div, #search.container-inline button {
+    vertical-align: middle;
+}
+
+/***************************************************/
+/* CSS fuer NEWSARCHIVE */
+/***************************************************/
+.newsarchive .archiv-title {
+    color: #A10F15;
+    font-size: 1em;
+    line-height: 1.2em;
+    padding: 10px 0 0;
+    text-align: left;
+}
+
+.newsarchive td.archiv-views-field-created {
+    background-color: transparent;
+    height: 1.4em;
+    padding-right: 10px;
+}
+
+.newsarchive .archiv-table th {
+    border-bottom: 3px solid #CCCCCC;
+    padding-right: 1em;
+    text-align: left;
+}
+
+#content-area .newsarchive .archiv-table {
+    margin: 0;
+    max-width: 99%;
+}
+
+.newsarchive .date-views-filter-wrapper {
+    width: 310px;
+}
+
+/********************************************/
+/* CSS fuer Calender Upcoming Events */
+/********************************************/
+#block-views-calendar_training-block_1 .BlockContent-body {
+	padding: 0px;
+}
+
+#block-views-calendar_training-block_1 .BlockContent-body ul li.views-row {
+	margin: 5px -1px;
+}
+
+#block-views-calendar_training-block_1 .BlockContent-body ul li.views-row .views-field-field-date1-value {
+    font-size: 0.75em;
+}
+
+/********************************************/
+/* CSS fuer Trainingstermin */
+/********************************************/
+.node-type-trainingstermin .calendar_link {
+    display: none;
+}

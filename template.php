@@ -162,23 +162,6 @@ function ht16zen_triathlon_preprocess_block(&$vars, $hook) {
 function ht16zen_triathlon_preprocess_node(&$variables) {
   $node = $variables['node'];
 
-  if (module_exists('taxonomy')) {
-    if($node->type == 'trainingstermin') {
-      $tids = taxonomy_node_get_terms($node);
-      foreach ($tids as $key => $term) {
-        if($term->tid == 5) {
-          $variables['cssclass'] = 'swim';
-        }
-        if($term->tid == 6) {
-          $variables['cssclass'] = 'bike';
-        }
-        if($term->tid == 7) {
-          $variables['cssclass'] = 'run';
-        }
-      }
-    }
-  }
-
   if($node->type == 'news3') {
     if($node->field_templateswitch[0]['value'] == 1){
     $variables['template_file'] = 'node-news3a';

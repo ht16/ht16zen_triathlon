@@ -63,9 +63,13 @@
 
   </div>
   
-  <div id="<?php print $cssclass; ?>">
+<h4>Trainingsart: <?php 
+
+/** Gibt den Titel des ersten Taxonomyterms aus. Es ist sowieso nur einer enthalten...
+*/
+print reset(reset($taxonomy));
+?></h4>
   
-  <?php echo $node->field_date1[0]['view']; ?>
   <div class="content">
     <?php echo $content; ?>
   </div>
@@ -77,5 +81,4 @@
       </div>
     <?php endif; ?>
   </div>
-  </div> <!-- #cssclass -->
 </div>
