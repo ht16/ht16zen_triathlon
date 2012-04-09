@@ -62,6 +62,9 @@
     <?php endif; ?>
 
   </div>
+  
+  <div id="<?php print $cssclass; ?>">
+  
   <?php echo $node->field_date1[0]['view']; ?>
   <div class="content">
     <?php echo $content; ?>
@@ -74,4 +77,5 @@
       </div>
     <?php endif; ?>
   </div>
+  </div> <!-- #cssclass -->
 </div>

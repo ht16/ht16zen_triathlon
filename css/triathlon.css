@@ -58,4 +58,19 @@
 /***********************************************/
 /*Css Calendar Ende*/
 /***********************************************/
- 
+
+/*
+ * css for Trainingstermin $cssclass
+ */
+
+div#swim {
+  background-color: #ccccFF
+}
+
+div#bike {
+  background-color: #ccffcc;
+}
+
+div#run {
+  background-color: #ffcccc;
+} 
