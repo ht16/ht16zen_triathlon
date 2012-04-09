@@ -47,7 +47,10 @@ $index = 0;
         <?php if ($index++ == 0 && (isset($node->continuation) && $node->continuation)) : ?>
         <div class="continuation">&laquo;</div>
         <?php endif;?>
-        <div id="<?php print $field['id']; ?>" <?php if ($node->stripe[1]) : ?>style ="background-color:<?php print $node->stripe[1]; ?>" <?php endif;?>class="view-field view-data-<?php print $field['id'];?>">
+        <div id="<?php print $field['id']; ?>" <?php 
+        
+        /** Faerbt den gesamten Block ein. Je nach Traininsart sollten hier also andere Farben angezogen werden. */
+        if ($node->stripe[1]) : ?>style ="background-color:<?php print $node->stripe[1]; ?>" <?php endif;?>class="view-field view-data-<?php print $field['id'];?>">
           <?php if ($field['label']): ?>
             <div class="view-label-<?php print $field['id'] ?>"><?php print $field['label'] ?></div>
           <?php endif; ?>  

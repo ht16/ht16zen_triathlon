@@ -45,7 +45,10 @@ $node_class = (isset($node->class)) ? ' ' . $node->class : '';
       <?php /** print theme('calendar_stripe_stripe', $node); */ ?>
       <div class="<?php print $node->date_id ?> contents">
       <?php foreach ($fields as $field): ?>
-        <div id="<?php print $field['id']; ?>" <?php if ($node->stripe[1]) : ?>style ="background-color:<?php print $node->stripe[1]; ?>" <?php endif;?> class="view-field view-data-<?php print $field['id'] ?>">
+        <div id="<?php print $field['id']; ?>" <?php 
+        
+        /** Faerbt den gesamten Block ein. Je nach Traininsart sollten hier also andere Farben angezogen werden. */
+        if ($node->stripe[1]) : ?>style ="background-color:<?php print $node->stripe[1]; ?>" <?php endif;?> class="view-field view-data-<?php print $field['id'] ?>">
           <?php if ($field['label']): ?>
             <div class="view-label-<?php print $field['id'] ?>"><?php print $field['label'] ?></div>
           <?php endif; ?>  
