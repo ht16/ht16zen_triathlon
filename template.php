@@ -155,6 +155,7 @@ function ht16zen_triathlon_preprocess_block(&$vars, $hook) {
 }
 // */
 
+
 /**
   * Insert the first image of imagefield into teaserview
 */
