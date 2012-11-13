@@ -56,43 +56,6 @@
   top: -3px;
 }
 
-.calendar-calendar td .inner div.calendar div,
-.calendar-calendar td .inner div.calendar div a {
-  background: none;
-}
-
-.calendar-calendar .month-view .full td.single-day div.monthview, 
-.calendar-calendar .week-view .full td.single-day div.weekview, 
-.calendar-calendar .day-view .full td.single-day div.dayview {
-  background: none;
-}
-
-/** CALENDAR MULTI DAY **/
-
-.calendar-calendar .month-view .full td.multi-day div.monthview,
-.calendar-calendar .week-view .full td.multi-day div.weekview,
-.calendar-calendar .day-view .full td.multi-day div.dayview {
-    background: none;
-}
-
-.calendar-calendar .month-view .full td.multi-day div.monthview div.cutoff,
-.calendar-calendar .week-view .full td.multi-day div.weekview div.cutoff,
-.calendar-calendar .day-view .full td.multi-day div.dayview div.cutoff {
-    display: none;
-}
-
-.calendar-calendar .month-view .full td.multi-day .calendar.monthview .view-field,
-.calendar-calendar .week-view .full td.multi-day .calendar.weekview .view-field,
-.calendar-calendar .day-view .full td.multi-day .calendar.dayview .view-field {
-    width: 100%;
-}
-
-.calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
-.calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents,
-.calendar-calendar .day-view .full td.multi-day .calendar.dayview .contents {
-    width: 100%;
-}
-
 
 /***********************************************/
 /*CSS für Gallery Images*/
@@ -132,19 +95,6 @@
 /*************************************************/
 /* CSS für Comments*/
 /*************************************************/
-#comments {
-    margin: 4em 0;
-}
-
-.comment {
-    border-bottom: 1px solid lightgrey;
-    margin: 5px 0;
-}
-
-.comment.last {
-    border-bottom: 0 none;
-}
-
 .comment .submitted {
     color: #999999;
     font-size: 0.825em;
@@ -194,7 +144,6 @@
     background-color: transparent;
     height: 1.4em;
     padding-right: 10px;
-    width: 155px;
 }
 
 .newsarchive .archiv-table th {
@@ -212,7 +161,6 @@
     width: 310px;
 }
 
-
 /********************************************/
 /* CSS für Calender Upcoming Events */
 /********************************************/
@@ -221,7 +169,7 @@
 }
 
 #block-views-calendar_training-block_1 .BlockContent-body ul li.views-row {
-	margin: 5px -4px;
+	margin: 5px -1px;
 }
 
 #block-views-calendar_training-block_1 .BlockContent-body ul li.views-row .views-field-field-date1-value {
@@ -233,62 +181,4 @@
 /********************************************/
 .node-type-trainingstermin .calendar_link {
     display: none;
-}
-
-/********************************************/
-/* CSS für Letzte Beiträge */
-/********************************************/
-
-#content-area div.trackerCondensed td.views-field-comment-count {
-    text-align: center;
-}
-
-#content-area div.trackerCondensed th a {
-    margin-left: 5px;
-}
-
-#content-area div.trackerCondensed th.views-field {
-    border-bottom: 3px solid lightgray;
-}
-
-#content-area div.trackerCondensed td.views-field-comment-count a {
-    font-size: 9px;
-    color: red;
-}
-#content-area div.trackerCondensed td.views-field span.marker {
-    font-size: 9px;
-    color: red;
-}
-
-
-/********************************************/
-/* Neue Mitgliederliste */
-/********************************************/
-.mitgliederliste {
-    padding-top: 20px;
-}
-
-.mitgliederliste .panel-panel .panel-col-first {
-    border-bottom: 1px solid lightgray;
-    height:  93px;
-    padding: 8px 0px 2px;
-    width: 30%;
-}
-.mitgliederliste .panel-2col .panel-panel .panel-col-last {
-    border-bottom: 1px solid lightgray;
-    height: 93px;
-    padding: 8px 0 2px;
-    width: 70%;
-}
-.mitgliederliste .panel-2col .picture {
-    vertical-align: middle;
-    width: 100%;
-}
-
-
-/********************************************/
-/* Startseite */
-/********************************************/
-.view-header {
-    border-bottom: 1px solid lightgrey;
 }
